@@ -1,21 +1,22 @@
 * {
 	box-sizing: border-box;
-	font-family: Raleway;
+	font-family: 'Raleway', sans-serif;
 	text-transform: capitalize;
 }
 body {
-	
+	width: auto;
 	background-size: cover;
 	background-image: url('portada.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-color: white;
-
+	font-size: 16px;
 	
 }
 img {
 	cursor: pointer;
+	transition: 2s;
 	animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)};
 }
 img:hover {
@@ -25,25 +26,40 @@ img:hover {
 
 }
 header {
-	width: 90%;
+	width: 100%;
 	margin: auto;
 	background: transparent;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1} 
 }
 header .logo {
-	
 	background: transparent;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
 header .logo h2 {
 	color: white;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	align-items: center;
+
+}
+header .logo h2 .content-img {
+	width: 3em;
+}
+header .logo h2 img {
+	width:100%;
+	vertical-align: center;
 
 }
 header .categorias {
-	
 	background: transparent;
 	flex-wrap: wrap;
 	text-align: right;
@@ -52,9 +68,10 @@ header .categorias {
 header .categorias a {
 	text-decoration: none;
 	color: white;
-	font-size: 13px;
-	padding: 5px;
-	margin-left: 10px;
+	font-size: 0.81em;
+	padding: 0.62rem;
+	margin-left: 0.31em;
+	background: rgba(253,253,253,0.5);
 }
 header .categorias a:hover {
 	border: none;
@@ -69,28 +86,31 @@ main {
 	
 }
 main .portada {
-	width: 50%;
+	width: 80%;
 	margin: auto;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-bottom: 100px;
+	margin-bottom: 6.25em;
 	
 }
 main .portada h1 {
 	width: 100%;
 	color:white;
 	text-align: center;
-
-	margin-top: 100px;
+	margin-top: 5rem;
+	font-size: 3em;
 	
 }
 main .portada p {
 	width: 100%;
 	color: white;
 	text-align: center;
+	font-size: 1em;
+	font-family: Raleway Light;
+	font-weight: bold;
 }
 main .servicios {
 	width: 100%;
@@ -98,18 +118,25 @@ main .servicios {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	padding: 10px;
+	padding: 1rem;
 
 }
 main .servicios h2 {
 	width: 100%;
 	text-align: center;
 	font-weight: normal;
+	font-size: 1rem;
+	padding: 1em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-weight: bold;
+	font-family: Raleway Light;
 }
 main .servicios .principal {
-	width: 90%;
+	width: 100%;
 	margin: auto;
-	padding: 10px;
+	padding: 1em;
 	background: yellow;
 	display: flex;
 	flex-wrap: wrap;
@@ -119,46 +146,110 @@ main .servicios .principal {
 }
 main .servicios .carta {
 	width: 30%;
-	padding: 40px 0px;
+	margin: auto;
+	padding: 4em 0px;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	align-items: center;
 	text-align: center;
 	background: white;
 }
 main .servicios .carta .contenido-carta {
 	width: 90%;
-	padding: 10px;
+	margin: auto;
+	padding: 0.5em;
 	background: white;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
 main .servicios .carta .contenido-carta i {
 	width: 100%;
+	padding: 1em;
 	text-align: center;
+	font-size: 2em;
+	color: #2196F3;
 }
 main .servicios .carta .contenido-carta h3 {
 	width:100%;
+	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
+	font-size: 1.5em;
+}
+main .servicios .carta .contenido-carta small {
+	margin-top: 10px;
+	font-size: 1em;
+}
+footer {
+	display: flex;
+	padding: 1rem;
+	justify-content: space-between;
+	align-items: center;
+	background: white;
+
 }
 
 footer .info {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	
-	justify-content: center;
+	justify-content: space-between;
 }
 footer .info a {
-	padding: 10px;
-	color: white;
+	padding: 0.62em;
+	font-size: 0.8em;
+	color: #2196F3;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: Raleway Light;
+}
+footer .redes {
+	display: flex;
+	justify-content: space-between;
+	background: white;
+}
+footer .redes h3 {
+	width: 100%;
+	text-align: center;
+}
+footer .redes a {
+	padding: 1rem;
+	text-decoration: none;
+	font-size: 2em;
+}
+footer .redes .fac {
+	color: #3b5998;
+}
+footer .redes .is {
+	color: #C13584;
+}
+footer .redes .yo {
+	color: #c4302b;
+}
+@media screen and (max-width: 500px) {
+	body {
+		font-size: 15px;
+	}
+	footer {
+		flex-direction: column;
+	}
+	footer .info {
+		justify-content: center;
+		align-items: center;
+	}
+	main .servicios .carta {
+		width: 100%;
+		margin: 10px;
+		
+	}
 }
