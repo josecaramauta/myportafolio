@@ -71,7 +71,8 @@ header .categorias a {
 	font-size: 0.81em;
 	padding: 0.62rem;
 	margin-left: 0.31em;
-	background: #2196F3;
+	background: transparent;
+	font-weight: bold;
 }
 header .categorias a:hover {
 	border: none;
