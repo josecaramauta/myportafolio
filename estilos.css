@@ -14,47 +14,31 @@ body {
 	font-size: 16px;
 	
 }
-img {
-	cursor: pointer;
-	transition: 2s;
-	animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)};
-}
-img:hover {
-	transform: translate(10px);
-	transition: 1s;
-
-
-}
 header {
 	width: 100%;
 	margin: auto;
-	background: transparent;
+	background: white;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1} 
 }
 header .logo {
 	background: transparent;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 }
-header .logo h2 {
-	color: white;
-	display: flex;
-	flex-wrap:wrap;
-	justify-content: space-between;
-	align-items: center;
-
-}
-header .logo h2 .content-img {
+header .logo .content-img {
 	width: 3em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
-header .logo h2 img {
+header .logo img {
 	width:100%;
 	vertical-align: center;
 
@@ -64,20 +48,29 @@ header .categorias {
 	flex-wrap: wrap;
 	text-align: right;
 	align-items: center;
+	margin-right: 0.62em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
 header .categorias a {
 	text-decoration: none;
-	color: white;
+	color: rgba(5,5,5,0.8);
 	font-size: 0.81em;
 	padding: 0.62rem;
-	margin-left: 0.31em;
-	background: transparent;
+	background: rgba(253,253,253,0.5);
 	font-weight: bold;
+	font-family: Raleway Light;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	align-items: center;
 }
 header .categorias a:hover {
 	border: none;
-	border-left: 2px solid white;
-	border-top: 2px solid white;
+	background: #f1f1f1;
+	color: #2196F3;
 
 
 
@@ -98,20 +91,24 @@ main .portada {
 	
 }
 main .portada h1 {
-	width: 100%;
+	
 	color:white;
 	text-align: center;
 	margin-top: 5rem;
-	font-size: 3em;
+	font-size: 2rem;
 	
 }
 main .portada p {
-	width: 100%;
-	color: white;
+	width: 50%;
+	margin: auto;
+	padding: 0.62em;
+	color: #f1f1f1;
 	text-align: center;
 	font-size: 1em;
 	font-family: Raleway Light;
 	font-weight: bold;
+	background: rgba(253,253,253,0.3);
+	border-radius: 6.25em;
 }
 main .servicios {
 	width: 100%;
