@@ -56,7 +56,7 @@ header .categorias {
 }
 header .categorias a {
 	text-decoration: none;
-	color: rgba(5,5,5,0.8);
+	color: #2196F3;
 	font-size: 0.81em;
 	padding: 0.62rem;
 	background: rgba(253,253,253,0.5);
@@ -67,12 +67,10 @@ header .categorias a {
 	justify-content: space-between;
 	align-items: center;
 }
-header .categorias a:hover {
+header .categorias a:hover, header .categorias a:active  {
 	border: none;
 	background: #f1f1f1;
 	color: #2196F3;
-
-
 
 }
 main {
@@ -87,6 +85,7 @@ main .portada {
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
 	margin-bottom: 6.25em;
 	
 }
@@ -99,16 +98,15 @@ main .portada h1 {
 	
 }
 main .portada p {
-	width: 50%;
+	width: 100%;
 	margin: auto;
 	padding: 0.62em;
 	color: #f1f1f1;
 	text-align: center;
 	font-size: 1em;
 	font-family: Raleway Light;
-	font-weight: bold;
 	background: rgba(253,253,253,0.3);
-	border-radius: 6.25em;
+	
 }
 main .servicios {
 	width: 100%;
@@ -116,7 +114,7 @@ main .servicios {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	padding: 1rem;
+
 
 }
 main .servicios h2 {
@@ -134,18 +132,17 @@ main .servicios h2 {
 main .servicios .principal {
 	width: 100%;
 	margin: auto;
-	padding: 1em;
 	background: yellow;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	background: rgba(250,250,250,1);
 }
 main .servicios .carta {
 	width: 30%;
 	margin: auto;
-	padding: 4em 0px;
+	padding: 0.5em;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -153,17 +150,32 @@ main .servicios .carta {
 	align-items: center;
 	text-align: center;
 	background: white;
+	margin-bottom: 1.25em;
+	margin-top: 1.25em;
 }
 main .servicios .carta .contenido-carta {
-	width: 90%;
+	width: 100%;
 	margin: auto;
-	padding: 0.5em;
+	padding: 1em;
 	background: white;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+	transition: 0.5s;
+}
+main .servicios .carta .contenido-carta:hover {
+	transform: scale(1.1);
+}
+main .servicios .carta .contenido-carta .cont-img {
+	width: 100%;
+	padding: 0.62em;
+	background: white;
+}
+main .servicios .carta .contenido-carta .cont-img img {
+	width: 100%;
+	vertical-align: top;
 }
 main .servicios .carta .contenido-carta i {
 	width: 100%;
@@ -176,6 +188,7 @@ main .servicios .carta .contenido-carta h3 {
 	width:100%;
 	margin: auto;
 	display: flex;
+	padding: 0.5em;
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content: space-around;
@@ -183,8 +196,12 @@ main .servicios .carta .contenido-carta h3 {
 	font-size: 1.5em;
 }
 main .servicios .carta .contenido-carta small {
-	margin-top: 10px;
+	margin-bottom: 10px;
 	font-size: 1em;
+}
+main .servicios .carta .contenido-carta .por {
+	color: #2196F3;
+	
 }
 footer {
 	display: flex;
@@ -234,7 +251,7 @@ footer .redes .is {
 footer .redes .yo {
 	color: #c4302b;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 770px) {
 	body {
 		font-size: 15px;
 	}
